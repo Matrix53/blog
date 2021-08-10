@@ -19,13 +19,19 @@ index_img: /img/chore/django_logo_index.jpg
 - [Django](https://www.djangoproject.com/)：一个成熟的 Python 后端框架，自带多个模块
 - [Github Action](https://docs.github.com/en/actions)：Github 自动运行的脚本，详情见我的另一篇博客{% post_link Github探秘 %}
 
-使用这个技术栈的原因是：若要在一台 IP 唯一的服务器上同时部署前端和后端，且均使用 HTTPS 协议进行传输的话，前端和后端必定监听不同的端口。但是监听不同的端口就会产生跨域问题，而在一台服务器上解决跨域问题，一种较为简洁的方案是前端将请求反向代理给后端。而使用 Nginx 将请求反向代理给 uWSGI，uWSGI 处理动态请求的方案配置较少，较为简洁，于是采用这个方案。在请求的处理上，将带有 api 前缀的请求视为动态请求（访问 uWSGI），其他的请求视为静态请求（仅访问 Nginx）。即，将**https://ip:443/request**视为静态请求，将**https://ip:443/api/request**视为动态请求。
+使用这个技术栈的原因：若要在一台 IP 唯一的服务器上同时部署前端和后端，且均使用 HTTPS 协议进行传输的话，前端和后端必定监听不同的端口。但是监听不同的端口就会产生跨域问题，而在一台服务器上解决跨域问题，一种较为简洁的方案是前端将请求反向代理给后端。而使用 Nginx 将请求反向代理给 uWSGI，uWSGI 处理动态请求的方案配置较少，较为简洁，于是采用这个方案。
+
+在请求的处理上：将带有 api 前缀的请求视为动态请求（访问 uWSGI），其他的请求视为静态请求（仅访问 Nginx）。即，将**https://ip:443/request**视为静态请求，将**https://ip:443/api/request**视为动态请求。
 
 ## 部署流程
 
+本文不关注 Nginx、uWSGI、Django、Git 等环境的安装，具体的安装步骤请到[相关链接](#相关链接)中查看。
+
 ### Nginx 反向代理
 
-使用 Nginx 做反向代理，一般用到的配置参数是 proxy_pass，但是对于 uWSGI，nginx 专门提供了一个更优的配置参数进行配置，即 uwsgi_pass，配置文件核心内容如下：
+> 关于 Nginx 的配置基础，可以参考[这个链接](https://www.runoob.com/w3cnote/nginx-setup-intro.html)
+
+使用 Nginx 做反向代理，一般用到的配置参数是 proxy_pass。但是对于 uWSGI，nginx 专门提供了一个更优的配置参数进行配置，即 uwsgi_pass，配置文件核心内容如下：
 
 ```plain
 # Nginx配置文件部分内容
@@ -105,7 +111,8 @@ route-run = fixpathinfo: # 根据参数去除请求前缀
 
 1. 更新服务器上的 Python 代码，考虑用`git pull`命令完成，这里需要注意服务器需要有操作项目仓库的权限
 2. 重启 uWSGI，使用`uwsgi --reload uwsgi.pid`即可
-   注意，Nginx 是不需要重启的，因为 Nginx 不需要做任何代码或者配置更新。
+
+注意，Nginx 是不需要重启的，因为 Nginx 不需要做任何代码或者配置更新。
 
 于是，可以这样编写[Github Action](https://docs.github.com/en/actions)的脚本：
 
