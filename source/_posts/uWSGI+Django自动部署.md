@@ -87,7 +87,9 @@ max-requests = 1000 # 设置每个进程最大请求数
 
 ### 处理请求前缀
 
-若通过上述配置文件部署 Django，那么请求的前缀不会被自动去掉，即 Nginx 虽然将**https://ip:443/api/request**这个请求传递给了 Django，但是 Django 会将这个请求的 url 解析为 api/request 而不是 request。一种 Nginx 推荐的解决问题的方法是 Nginx 给 uWSGI 传递参数，uWSGI 根据参数去除请求前缀，向配置文件中添加如下配置即可：
+若通过上述配置文件部署 Django，那么请求的前缀不会被自动去掉，即 Nginx 虽然将**https://ip:443/api/request**这个请求传递给了 Django，但是 Django 会将这个请求的 url 解析为 api/request 而不是 request。
+
+一种 Nginx 推荐的解决问题的方法是 Nginx 给 uWSGI 传递参数，uWSGI 根据参数去除请求前缀，向配置文件中添加如下配置即可：
 
 ```plain
 # Nginx配置文件部分内容
@@ -139,7 +141,7 @@ jobs:
 
 ## 结语
 
-至此，Nginx+uWSGI 部署 Django 项目的大致流程就介绍完了。读者在自己的服务器上实践可能会遇到一些坑，建议在[Google](https://www.google.com.hk/)或者[StackOverflow](https://stackoverflow.com/)上查询相关答案。
+至此，Nginx+uWSGI 部署 Django 项目的大致流程就介绍完了。读者在自己的服务器上实践可能会遇到一些坑，建议在[Google](https://www.google.com.hk/)或者[StackOverflow](https://stackoverflow.com/)上查询相关答案，或者在下方留言区写下您遇到的问题。
 
 ## 相关链接
 
