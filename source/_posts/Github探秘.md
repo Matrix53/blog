@@ -2,6 +2,7 @@
 title: Github探秘
 date: 2021-07-25 09:48:22
 categories: 随笔
+tags: Github
 excerpt: 本文针对Github上的一些好用的功能进行介绍，包括但不限于Git page、Github Action等功能，帮助读者了解Github的强大之处。
 index_img: /img/chore/github_logo_index.png
 ---
@@ -39,15 +40,15 @@ Github Apps 和 Github Actions 比较类似，你可以在 Github 顶栏的**Mar
 
 ## Github Pages
 
-Github Pages是一个用于网页展示的功能，于**2008年**推出，世界上的任何一个人，都能通过Github展示自己的网页。可以利用Github Pages进行个人博客托管、项目成果展示等，[我的个人博客](https://blog.matrix53.top)就是利用Github Pages进行部署的，免去了购买服务器的费用。
+Github Pages 是一个用于网页展示的功能，于**2008 年**推出，世界上的任何一个人，都能通过 Github 展示自己的网页。可以利用 Github Pages 进行个人博客托管、项目成果展示等，[我的个人博客](https://blog.matrix53.top)就是利用 Github Pages 进行部署的，免去了购买服务器的费用。
 
-具体来说，想要使用Github Pages，必须建立一个名为username.github.io的仓库（其中的username为用户名），然后在该仓库的设置中打开Pages服务，这里就不赘述了。需要注意的是，不是只有该仓库才能启用Github Pages服务，其他仓库也能启用Pages服务。
+具体来说，想要使用 Github Pages，必须建立一个名为 username.github.io 的仓库（其中的 username 为用户名），然后在该仓库的设置中打开 Pages 服务，这里就不赘述了。需要注意的是，不是只有该仓库才能启用 Github Pages 服务，其他仓库也能启用 Pages 服务。
 
-关于Github Pages的详细介绍和教程，请见[官方文档](https://docs.github.com/en/pages)
+关于 Github Pages 的详细介绍和教程，请见[官方文档](https://docs.github.com/en/pages)
 
 ## 其他功能
 
-Github还有很多强大的功能，比如其提供的REST API、GraphQL API、projects和gists等，这里也不再叙述了。最后讲一个小故事吧，Github在2018年3月1日遭遇了有史以来最严重的DDoS攻击，峰值流量达1.35Tbps，而Github在10分钟之内化解了这次攻击。
+Github 还有很多强大的功能，比如其提供的 REST API、GraphQL API、projects 和 gists 等，这里也不再叙述了。最后讲一个小故事吧，Github 在 2018 年 3 月 1 日遭遇了有史以来最严重的 DDoS 攻击，峰值流量达 1.35Tbps，而 Github 在 10 分钟之内化解了这次攻击。
 
 ## 相关链接
 
