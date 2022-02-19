@@ -272,11 +272,10 @@ navbar:
   # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "订阅", link: "/atom.xml", icon: "iconfont icon-rss" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -608,17 +607,6 @@ utterances:
 
 
 #---------------------------
-# 归档页
-# Archive Page
-#---------------------------
-archive:
-  banner_img: /img/global/banner.jpg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
-  subtitle:
-
-
-#---------------------------
 # 分类页
 # Category Page
 #---------------------------
@@ -649,24 +637,6 @@ category:
 
 
 #---------------------------
-# 标签页
-# Tag Page
-#---------------------------
-tag:
-  enable: true
-  banner_img: /img/global/banner.jpg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
-  subtitle:
-  tagcloud:
-    min_font: 15
-    max_font: 30
-    unit: px
-    start_color: "#BBBBEE"
-    end_color: "#337ab7"
-
-
-#---------------------------
 # 关于页
 # About Page
 #---------------------------
@@ -683,7 +653,7 @@ about:
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/Matrix53", tip: "GitHub" }
-    - { class: "iconfont icon-rss",link: "https://blog.matrix53.top/atom.xml", tip: "ATOM订阅" }
+    - { class: "iconfont icon-stack-overflow",link: "https://stackoverflow.com/users/12389770/matrix53", tip: "StackOverflow" }
     - { class: "iconfont icon-zhihu-fill", link: "https://www.zhihu.com/people/gai-yong-hu-hen-lan-8-44", tip: "知乎" }
     - { class: "iconfont icon-wechat-fill", qrcode: "/img/global/wxQRcode_add.jpg" }
 

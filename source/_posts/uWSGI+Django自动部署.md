@@ -2,7 +2,6 @@
 title: uWSGI+Django自动部署
 date: 2021-08-10 20:07:17
 categories: 随笔
-tags: 运维
 excerpt: 本文记录了一种使用Nginx反向代理uWSGI，进行Django项目部署的方案，使用了Github Action实现了项目的自动部署。
 index_img: /img/chore/django_logo_index.jpg
 ---
