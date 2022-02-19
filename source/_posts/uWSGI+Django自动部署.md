@@ -90,7 +90,7 @@ max-requests = 1000 # 设置每个进程最大请求数
 
 若通过上述配置文件部署 Django，那么请求的前缀不会被自动去掉，即 Nginx 虽然将**https://ip:443/api/request**这个请求传递给了 Django，但是 Django 会将这个请求的 url 解析为 api/request 而不是 request。
 
-一种 Nginx 推荐的解决问题的方法是 Nginx 给 uWSGI 传递参数，uWSGI 根据参数去除请求前缀，向配置文件中添加如下配置即可：
+Nginx 官方推荐的解决方案是 Nginx 给 uWSGI 传递参数，uWSGI 根据参数去除请求前缀，向配置文件中添加如下配置即可：
 
 ```plain
 # Nginx配置文件部分内容
