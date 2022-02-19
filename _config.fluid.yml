@@ -200,7 +200,7 @@ custom_css:
 
 # 自定义 <head> 节点中的 HTML 内容
 # Customize <head> HTML content
-custom_head: '<link rel="alternate" type="application/rss+xml" title="Matrix53 » RSS 2.0" href="https://rsshub.app/hexo/fluid/blog.matrix53.top">'
+custom_head: '<link rel="alternate" type="application/atom+xml" title="Matrix53 » ATOM" href="https://blog.matrix53.top/atom.xml">'
 
 # 自定义底部 HTML 内容（位于 footer 上方），注意不要和 `post: custom` 配置冲突
 # Customize the HTML content at the bottom (located above the footer), be careful not to conflict with `post: custom`
@@ -683,7 +683,7 @@ about:
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/Matrix53", tip: "GitHub" }
-    - { class: "iconfont icon-rss",link: "https://rsshub.app/hexo/fluid/blog.matrix53.top", tip: "RSS订阅" }
+    - { class: "iconfont icon-rss",link: "https://blog.matrix53.top/atom.xml", tip: "ATOM订阅" }
     - { class: "iconfont icon-zhihu-fill", link: "https://www.zhihu.com/people/gai-yong-hu-hen-lan-8-44", tip: "知乎" }
     - { class: "iconfont icon-wechat-fill", qrcode: "/img/global/wxQRcode_add.jpg" }
 
