@@ -1,8 +1,8 @@
 ---
-title: {{ title }}
-date: {{ date }}
-categories:
-excerpt:
+title: Andrew Ng 机器学习笔记(持续更新)
+date: 2022-02-21 19:27:56
+categories: 随笔
+excerpt: 测试
 index_img:
 ---
 
