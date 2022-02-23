@@ -4,7 +4,7 @@
 
 本项目是我的个人博客，基础架构为 Hexo 框架和 Fluid 主题，目前用到的插件如下：
 
-- Markdown 渲染器：hexo-renderer-markdown-it
+- Markdown 渲染器：hexo-renderer-pandoc
 - Github Pages 部署：hexo-deployer-git
 
 另外，还有基于 Fluid 主题的一些配置，如使用 leancloud 进行访问量统计，使用 utterances 进行评论管理等

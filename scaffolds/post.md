@@ -4,6 +4,7 @@ date: {{ date }}
 categories:
 excerpt:
 index_img:
+math: false
 ---
 
 ## 前言
