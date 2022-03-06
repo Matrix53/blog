@@ -47,6 +47,10 @@ math: true
 
 这一节的内容是线性代数基础，给出了矩阵和向量的定义，并定义了矩阵的相关运算。由于内容过于基础，就不做笔记了。如有还未学习过线性代数的读者，我推荐观看[3Blue1Brown 的线性代数合集](https://www.bilibili.com/video/BV1ys411472E)。
 
+## 第 2 周
+
+博主近期工作较多，不便更新，下一次更新最早是 3 月 21 日，请谅解。
+
 ## 参考资料
 
 - Coursera：Andrew Ng[机器学习课程](https://www.coursera.org/learn/machine-learning)
