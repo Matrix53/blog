@@ -249,7 +249,66 @@ math: true
 
 ### Octave/Matlab 的流程控制
 
-尚待施工
+- Matlab/Octave 的循环语句：
+
+  ```matlab
+  % 初始化 10×1 的零向量
+  v = zeros(10,1)
+  % for 循环的基础语法
+  for i=1:10,
+    v(i)=2^i;
+  end;
+  % while 循环的基础语法
+  i = 1;
+  while i<= 5,
+    v(i) = 100;
+    i = i+1;
+    break;
+  end;
+  ```
+
+- Matlab/Octave 的分支语句：
+
+  ```matlab
+  % 初始化 a
+  a = 3;
+  % if 语句的基础语法
+  if a==3,
+    disp('a is 3') % 末尾可以加;
+  elseif a==4,
+    disp('a is 4')
+  else
+    disp('a is not 3 or 4')
+  end;
+  ```
+
+- Matlab/Octave 的函数定义：
+
+  {% note secondary %}
+  Matlab/Octave 一般将函数定义在单独的文件中，暴露出的函数名必须与文件名一致。
+  
+  Matlab/Octave 的 REPL 存在搜索路径的概念，REPL 可以使用搜索路径下`.m`文件中的函数，搜索路径包括`pwd`。
+
+  另外，还可使用匿名函数、inline命令等来定义函数，下文的函数定义均在`.m`文件中进行。
+  {% endnote %}
+
+  ```matlab
+  % squareThisNumber.m
+  function [y] = squareThisNumber(x)
+    y = x^2;
+  end
+  % REPL
+  addpath('path/to/squareThisNumber.m') % 将函数添加到搜索路径
+  squareThisNumber(3) % 调用函数，结果为9
+  % squareAndCubeThisNumber.m
+  function [y1,y2] = squareAndCubeThisNumber(x)
+    y1 = x^2;
+    y2 = x^3;
+  end
+  % REPL
+  addpath('path/to/squareAndCubeThisNumber.m') % 将函数添加到搜索路径
+  [a,b] = squareAndCubeThisNumber(3) % 调用函数，a=9,b=27
+  ```
 
 ### Tips: 将计算向量化
 
