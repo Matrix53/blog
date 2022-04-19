@@ -3,7 +3,7 @@ title: Andrew Ng 机器学习笔记(第2周)
 date: 2022-04-18 21:54:52
 categories: 人工智能
 excerpt: 机器学习课程第2周的笔记，本周的内容包括多变量线性回归、解析法计算参数、Octave 语法入门三部分。
-index_img: /img/AI/ai_index.jpg
+index_img: /img/AI/ai_index_1.jpg
 math: true
 ---
 
@@ -312,7 +312,7 @@ math: true
 
 ### Tips: 将计算向量化
 
-尚待施工
+- Matlab、Octave、Python 等语言都有内置的或者第三方的高性能计算库，这些库对矩阵运算做了特别的优化，在实现模型时使用矩阵进行运算往往能提高效率。
 
 ## 参考资料
 
