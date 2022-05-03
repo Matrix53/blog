@@ -19,23 +19,21 @@ Github 作为全世界最大的代码托管网站，无数顶尖极客云集于�
 
 一个容易想到的 Github Actions 用途就是自动部署，在成员向指定仓库 push 之后，可以利用临时服务器进行源代码的编译，并将要部署的文件传到自己的服务器上。从某种意义上来说，Github Actions 有点像钩子函数，只不过这个钩子函数的功能非常强大。
 
-关于 Github Actions 入门及脚本编写，可以看这个[官方文档](https://docs.github.com/en/actions)。
-
-![Github Actions](/img/chore/github_action.png)
+关于 Github Actions 入门及脚本编写，可以看这个[官方文档](https://docs.github.com/en/actions)。![Github Actions](/img/chore/github_action.png)
 
 ## Github Apps
 
-Github Apps 和 Github Actions 比较类似，你可以在 Github 顶栏的**Marketplace**里同时找到这两项 Github 提供的功能。如果要说 Apps 和 Actions 的不同的话，我认为体现在**集成度**上面，Apps 的功能更为直接和完善，开箱即用。Apps 就好像给编辑器安装的插件，而 Actions 就好像给编辑器写的脚本。基于 Github Apps，你可以实现但不限于以下几件事（事实上，这只是冰山一角）：
+Github Apps 和 Github Actions 比较类似，你可以在 Github 顶栏的**Marketplace**里同时找到这两项 Github 提供的功能。如果要说 Apps 和 Actions 的不同的话，我认为体现在**集成度**上面，Apps 的功能更为直接和完善，开箱即用。![Github Apps](/img/chore/github_app.png)
 
-- CI/CD:自动化项目构建、项目测试、项目部署等工作流
+Apps 就好像给编辑器安装的插件，而 Actions 就好像给编辑器写的脚本。基于 Github Apps，你可以实现但不限于以下几件事（事实上，这只是冰山一角）：
+
+- 自动化项目构建、项目测试、项目部署等工作流
 - 图片自动无损压缩，加快网络传输
 - 自动关闭不活跃的 issue
 
 {% note secondary %}
 关于 Actions 和 Apps，读者可以在 Github 的[Marketplace](https://github.com/marketplace)上尽情探索。
 {% endnote %}
-
-![Github Apps](/img/chore/github_app.png)
 
 ## Github Pages
 
