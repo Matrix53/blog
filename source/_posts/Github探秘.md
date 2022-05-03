@@ -17,13 +17,13 @@ Github 作为全世界最大的代码托管网站，无数顶尖极客云集于�
 - **指定的时机**可以是在某个人对该 Github 仓库 push 之后，或者是该仓库新增了一条评论之后，诸如此类时机都可以被指定为执行脚本的时机，详情见[官方文档](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)。
 - **脚本**可以非常的复杂，这里的脚本，是运行在 Github 提供的一台临时服务器上的，你可以指定该服务器的系统以及系统型号，你可以在该系统上安装 node.js，毕竟是服务器嘛。
 
-一个容易想到的 Github Actions 用途就是自动部署，在成员向指定仓库 push 之后，可以利用临时服务器进行源代码的编译，并将要部署的文件传到自己的服务器上。从某种意义上来说，Github Actions 有点像钩子函数，只不过这个钩子函数的功能非常强大。
+容易想到可以将 Github Actions 用于自动部署，在成员向指定仓库 push 之后，可以利用临时服务器进行源代码的编译，并将要部署的文件传到自己的服务器上。从某种意义上来说，Github Actions 有点像钩子函数，只不过这个钩子函数的功能非常强大。
 
 关于 Github Actions 入门及脚本编写，可以看这个[官方文档](https://docs.github.com/en/actions)。![Github Actions](/img/chore/github_action.png)
 
 ## Github Apps
 
-Github Apps 和 Github Actions 比较类似，你可以在 Github 顶栏的**Marketplace**里同时找到这两项 Github 提供的功能。如果要说 Apps 和 Actions 的不同的话，我认为体现在**集成度**上面，Apps 的功能更为直接和完善，开箱即用。![Github Apps](/img/chore/github_app.png)
+Github Apps 和 Github Actions 比较类似，你可以在 Github 顶栏的**Marketplace**里同时找到这两项 Github 提供的功能。如果要说 Apps 和 Actions 有什么不同的话，我认为体现在**集成度**上面，Apps 的功能更为直接和完善，开箱即用。![Github Apps](/img/chore/github_app.png)
 
 Apps 就好像给编辑器安装的插件，而 Actions 就好像给编辑器写的脚本。基于 Github Apps，你可以实现但不限于以下几件事（事实上，这只是冰山一角）：
 
