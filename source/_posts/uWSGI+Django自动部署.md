@@ -19,7 +19,7 @@ index_img: /img/chore/django_logo_index.jpg
 - [Django](https://www.djangoproject.com/)：一个成熟的 Python 后端框架，自带多个模块
 - [Github Action](https://docs.github.com/en/actions)：Github 自动运行的脚本，详情见我的另一篇博客{% post_link Github探秘 %}
 
-使用这个技术栈的原因：若要在一台 IP 唯一的服务器上同时部署前端和后端，且均使用 HTTPS 协议进行传输的话，前端和后端必定监听不同的端口。但是监听不同的端口就会产生跨域问题，而在一台服务器上解决跨域问题，一种较为简洁的方案是前端将请求反向代理给后端。而使用 Nginx 将请求反向代理给 uWSGI，uWSGI 处理动态请求的方案配置较少，较为简洁，于是采用这个方案。
+使用这个技术栈的原因：若要在一台 IP 唯一的服务器上同时部署前端和后端，且均使用 HTTPS 协议进行传输的话，前端和后端必定监听不同的端口。但是监听不同的端口就会产生跨域问题，而在一台服务器上解决跨域问题，一种方案是前端将请求反向代理给后端。而使用 Nginx 将请求反向代理给 uWSGI，uWSGI 处理动态请求的方案配置较少，较为简洁，于是采用这个方案。
 
 在请求的处理上：将带有 api 前缀的请求视为动态请求（访问 uWSGI），其他的请求视为静态请求（仅访问 Nginx）。即，将**https://ip:443/request**视为静态请求，将**https://ip:443/api/request**视为动态请求。
 
@@ -51,7 +51,7 @@ location / {
 
 ### uWSGI 处理动态请求
 
-uWSGI 可以手动启动，但是需要输入启动参数，这里让 uWSGI 从配置文件启动。假设 Django 项目叫做 backend，uWSGI 的配置文件叫做 uwsgi.ini，那么一个便于管理的项目结构大致如下：
+uWSGI 可以手动启动，但是需要输入启动参数，这里让 uWSGI 从配置文件启动。假设 Django 项目叫做 backend，uWSGI 的配置文件叫做 uwsgi.ini，那么一个项目的结构大致如下：
 
 ```plain
 # Django项目结构

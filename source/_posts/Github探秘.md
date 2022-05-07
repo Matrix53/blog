@@ -2,7 +2,7 @@
 title: Github探秘
 date: 2021-07-25 09:48:22
 categories: 随笔
-excerpt: 本文针对Github上的一些好用的功能进行介绍，包括但不限于Git page、Github Action等功能，帮助读者了解Github的强大之处。
+excerpt: 本文针对Github上的一些好用的功能进行介绍，包括但不限于Github Pages、Github Actions等功能，帮助读者了解Github的强大之处。
 index_img: /img/chore/github_logo_index.png
 ---
 
@@ -15,7 +15,7 @@ Github 作为全世界最大的代码托管网站，无数顶尖极客云集于�
 简单地说，Github Actions 是一个脚本，能够在一个指定的时机，对于某个指定的 Github 仓库做一些事情。
 
 - **指定的时机**可以是在某个人对该 Github 仓库 push 之后，或者是该仓库新增了一个 issue 之后，诸如此类时机都可以被指定为执行脚本的时机，详情见[官方文档](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)。
-- **脚本**可以非常的复杂，这里的脚本，是运行在 Github 提供的临时容器里的，你可以指定容器的操作系统，可以在该容器里安装 node.js 等。
+- **脚本**可以非常的复杂，这里的脚本，是运行在 Github 提供的临时容器里的，你可以指定容器的操作系统，可以在该容器里安装 Node.js 等。
 
 容易想到可以将 Github Actions 用于自动部署，在成员向指定仓库 push 之后，可以利用临时容器进行源代码的编译，并将要部署的文件传到自己的服务器上。从某种意义上来说，Github Actions 有点像钩子函数。
 
@@ -45,7 +45,7 @@ Github Pages 是一个用于网页展示的功能，于**2008 年**推出，世�
 
 ## 其他功能
 
-Github 还有很多强大的功能，比如其提供的 REST API、GraphQL API、projects 和 gists 等。最后讲一个小故事吧，Github 在 2018 年 3 月 1 日遭遇了有史以来最严重的 DDoS 攻击，峰值流量达 1.35Tbps，而 Github 在 10 分钟之内化解了这次攻击。
+Github 还有很多强大的功能，比如其提供的 REST API、GraphQL API、Projects 和 Gists 等。最后讲一个小故事吧，Github 在 2018 年 3 月 1 日遭遇了有史以来最严重的 DDoS 攻击，峰值流量达 1.35Tbps，而 Github 在 10 分钟之内化解了这次攻击。
 
 ## 相关链接
 
