@@ -43,7 +43,13 @@ $\theta_j=\theta_j-\frac{\alpha}{m}\Sigma_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})
 
 ## 解决过拟合
 
-尚待施工
+**欠拟合**([underfitting](https://en.wikipedia.org/wiki/Overfitting#Underfitting)、high bias)：算法在训练集上表现不好，没有学习到数据的内在结构。
+
+**过拟合**([overfitting](https://en.wikipedia.org/wiki/Overfitting)、high variance)：算法在训练集上表现好，但在测试集上表现不好，泛化性能差。
+
+可以通过**减少特征的数量**或者**正则化**等方法，来解决过拟合问题。
+
+**正则化**([Regularization](https://en.wikipedia.org/wiki/Regularization_(mathematics)))：将最终拟合出的函数“简单化”的方法，分为显式正则化和隐式正则化。
 
 ## 参考资料
 
