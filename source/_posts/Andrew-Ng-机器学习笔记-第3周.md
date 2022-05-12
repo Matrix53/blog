@@ -25,7 +25,17 @@ $$
 
 ## 逻辑回归模型
 
-尚待施工
+待优化的$J(\Theta)$是由$Cost(h_{\theta}(x),y)$和$h_{\theta}(x)$共同决定的，当$J(\Theta)$是[凸函数](https://en.wikipedia.org/wiki/Convex_function)时，可以找到**全局最优解**。
+
+在**逻辑回归**(Logistic Regression)模型中，有如下公式：
+
+$h_{\theta}(x)=g(\Theta^T x)$
+
+$Cost(h_{\theta}(x),y)=-y\log(h_{\theta}(x))-\left(1-y\right)\log(1-h_{\theta}(x))$
+
+$\theta_j=\theta_j-\frac{\alpha}{m}\Sigma_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})x_j^{(i)}$
+
+除了梯度下降算法**之外**，还有很多算法能够优化$\Theta$，例如 [Conjugate Gradient](https://en.wikipedia.org/wiki/Conjugate_gradient_method)、[BFGS](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)、[L-BFGS](https://en.wikipedia.org/wiki/Limited-memory_BFGS) 等，建议使用**库函数**而不是手写这些算法。
 
 ## 多类分类问题
 
