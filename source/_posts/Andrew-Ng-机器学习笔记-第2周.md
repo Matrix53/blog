@@ -4,6 +4,7 @@ date: 2022-04-18 21:54:52
 categories: 人工智能
 excerpt: 机器学习课程第2周的笔记，本周的内容包括多变量线性回归、解析法计算参数、Octave 语法入门三部分。
 index_img: /img/AI/ai_index_2.jpg
+banner_img: /img/AI/ai_banner_2.jpg
 math: true
 ---
 

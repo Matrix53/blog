@@ -4,6 +4,7 @@ date: 2022-04-18 21:54:32
 categories: 人工智能
 excerpt: 机器学习课程第1周的笔记，本周的内容包括课程介绍、单变量线性回归、线性代数复习三部分。
 index_img: /img/AI/ai_index_1.jpg
+banner_img: /img/AI/ai_banner_1.jpg
 math: true
 ---
 

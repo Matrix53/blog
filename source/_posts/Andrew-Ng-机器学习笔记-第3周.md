@@ -5,6 +5,7 @@ date: 2022-05-10 15:36:48
 categories: 人工智能
 excerpt: 机器学习课程第3周的笔记，本周的内容包括分类问题及其表示、逻辑回归模型、多类分类问题、解决过拟合四部分。
 index_img: /img/AI/ai_index_3.jpg
+banner_img: /img/AI/ai_banner_3.jpg
 ---
 
 ## 前言
