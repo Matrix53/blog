@@ -9,7 +9,7 @@
 
 另外，还有基于 Fluid 主题的一些配置，如使用 leancloud 进行访问量统计，使用 utterances 进行评论管理等
 
-我的博客域名为[blog.matrix53.top](https://blog.matrix53.top)，欢迎讨论交流及交换友链
+我的博客域名为[matrix53.github.io](https://matrix53.github.io)，欢迎讨论交流及交换友链
 
 ## Credits
 
