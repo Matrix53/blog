@@ -37,7 +37,7 @@ Apps 就好像给编辑器安装的插件，而 Actions 就好像给编辑器写
 
 ## Github Pages
 
-Github Pages 是一个用于网页展示的功能，于**2008 年**推出，世界上的任何一个人，都能通过 Github 展示自己的网页。可以利用 Github Pages 进行个人博客托管、项目成果展示等，[我的个人博客](https://blog.matrix53.top)就是利用 Github Pages 进行部署的，免去了购买服务器的费用。
+Github Pages 是一个用于网页展示的功能，于**2008 年**推出，世界上的任何一个人，都能通过 Github 展示自己的网页。可以利用 Github Pages 进行个人博客托管、项目成果展示等，[我的个人博客](https://matrix53.github.io)就是利用 Github Pages 进行部署的，免去了购买服务器的费用。
 
 具体来说，想要使用 Github Pages，必须建立一个名为 username.github.io 的仓库（其中的 username 为用户名），然后在该仓库的设置中打开 Pages 服务，这里就不赘述了。需要注意的是，不是只有该仓库才能启用 Github Pages 服务，其他仓库也能启用 Pages 服务。
 

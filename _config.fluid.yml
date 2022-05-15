@@ -137,7 +137,7 @@ custom_js:
 custom_css:
 
 # 自定义 <head> 节点中的 HTML 内容
-custom_head: '<link rel="alternate" type="application/atom+xml" title="Matrix53 的博客" href="https://blog.matrix53.top/atom.xml">'
+custom_head: '<link rel="alternate" type="application/atom+xml" title="Matrix53 的博客" href="https://matrix53.github.io/atom.xml">'
 
 # 自定义底部 HTML 内容（位于 footer 上方），注意不要和 `post: custom` 配置冲突
 custom_html: ''
