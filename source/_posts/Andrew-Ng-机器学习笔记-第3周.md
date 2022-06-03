@@ -50,11 +50,14 @@ $\theta_j=\theta_j-\frac{\alpha}{m}\Sigma_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})
 
 可以通过**减少特征的数量**或者**正则化**等方法，来解决过拟合问题。
 
-**正则化**([Regularization](https://en.wikipedia.org/wiki/Regularization_(mathematics)))：将最终拟合出的函数“简单化”的方法，分为显式正则化和隐式正则化。
+**正则化**([Regularization](<https://en.wikipedia.org/wiki/Regularization_(mathematics)>))：将最终拟合出的函数“简单化”的方法，分为显式正则化和隐式正则化。
 
-## 参考资料
+## 相关链接
 
-- Coursera：Andrew Ng[机器学习课程](https://www.coursera.org/learn/machine-learning)
-- 知乎：[常用聚类算法](https://zhuanlan.zhihu.com/p/104355127)
+- [Andrew Ng 机器学习课程](https://www.coursera.org/learn/machine-learning)
+- [初学者深度学习框架的选择](https://zhuanlan.zhihu.com/p/96651310)
+- [机器学习的种类介绍](https://zhuanlan.zhihu.com/p/71952151)
+- [4 分钟训练 ImageNet](https://zhuanlan.zhihu.com/p/40993775)
+- [Transformer 模型详解](https://zhuanlan.zhihu.com/p/338817680)
 
 由于作者水平有限，所以文章中难免有少数不严谨之处，如有读者发现此类疏忽，恳请读者指出。另外，如果认为本文对您有帮助，欢迎请作者喝咖啡！![Matrix53的微信赞赏码](/img/global/wxQRcode_pay.png)

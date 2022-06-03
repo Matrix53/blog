@@ -315,9 +315,11 @@ math: true
 
 - Matlab、Octave、Python 等语言都有内置的或者第三方的高性能计算库，这些库对矩阵运算做了特别的优化，在实现模型时使用矩阵进行运算往往能提高效率。
 
-## 参考资料
+## 相关链接
 
-- Coursera：Andrew Ng[机器学习课程](https://www.coursera.org/learn/machine-learning)
-- 知乎：[常用聚类算法](https://zhuanlan.zhihu.com/p/104355127)
+- [Andrew Ng 机器学习课程](https://www.coursera.org/learn/machine-learning)
+- [向量矩阵的偏导计算](https://zhuanlan.zhihu.com/p/349469914)
+- [局部响应归一化(Local Response Normalization)](https://zhuanlan.zhihu.com/p/434773836)
+- [什么是批标准化(Batch Normalization)](https://zhuanlan.zhihu.com/p/24810318)
 
 由于作者水平有限，所以文章中难免有少数不严谨之处，如有读者发现此类疏忽，恳请读者指出。另外，如果认为本文对您有帮助，欢迎请作者喝咖啡！![Matrix53的微信赞赏码](/img/global/wxQRcode_pay.png)
