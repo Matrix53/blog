@@ -13,7 +13,8 @@ force_https: true
 
 # 主题暗色模式，开启后菜单中会出现切换按钮，用户浏览器会存储切换选项，并且会遵循 prefers-color-scheme 自动切换
 dark_mode:
-  default: dark
+  enable: true
+  default: auto
 
 # 自定义 <head> 节点中的 HTML 内容
 custom_head: '<link rel="alternate" type="application/atom+xml" title="Matrix53 的博客" href="https://matrix53.github.io/atom.xml">'
@@ -68,7 +69,7 @@ index:
   # 首页副标题的独立设置
   slogan:
     # 为空则按 hexo config.subtitle 显示
-    text: "一只遵循KISS原则的前端"
+    text: "振袖秋风问红叶，晚夜微雨问海棠"
 
 
 #---------------------------
